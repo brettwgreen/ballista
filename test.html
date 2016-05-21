@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Test page</title>
+	<script lang="javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+	<script lang="javascript" src="src/ballista.js"></script>
+	<script lang="javascript" src="src/ballista_facebook.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			ballista.createTwitterShareButton("#ballista_anchor", "Check out my sweet page", true, "brettwgreen", "brettwgreen", "awesome", true);
+			ballista.createTwitterFollowButton("#ballista_anchor", "brettwgreen", true, "brettwgreen", "brettwgreen", "awesome", true);
+			ballista.createTwitterHashtagButton("#ballista_anchor", "kirbydelauter", "He's at it again", "brettwgreen,vcsjones", "http://brettwgreen.com", true, true);
+			ballista.createTwitterMentionButton("#ballista_anchor", "brettwgreen", "Wazup my man", "vcsjones", true, true);
+			ballista.createFacebookShareButton("#ballista_anchor_fb", "http://www.google.com");
+		});
+	</script>
+</head>
+<body>
+	<div id="ballista_anchor"></div>
+	<div id="ballista_anchor_fb"></div>
+
+	</body>
+</html>
+
