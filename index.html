@@ -10,8 +10,16 @@
 	<script lang="javascript" src="src/ballista.js"></script>
 	<script lang="javascript" src="src/ballista_facebook.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+    
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
 	<script>
 		$(document).ready(function() {
 			ballista.createTwitterShareButton("#ballista_anchor_twitter_share", "Check out my sweet page", true, "brettwgreen", "brettwgreen", "awesome", true);
@@ -23,28 +31,30 @@
 	</script>
 </head>
 <body>
-	
-	<h1>Ballista - Javascript library for creating social media buttons</h1>
-	<h1>Version 1.0</h1>
-	<h2>Examples</h2>
-	<pre class="prettyprint">
-		ballista.createTwitterShareButton("#ballista_anchor_twitter_share", "Check out my sweet page", true, "brettwgreen", "brettwgreen", "awesome", true);
-		ballista.createTwitterFollowButton("#ballista_anchor_twitter_follow", "brettwgreen", true, "brettwgreen", "brettwgreen", "awesome", true);
-		ballista.createTwitterHashtagButton("#ballista_anchor_twitter_hashtag", "omg", "He's at it again", "brettwgreen,twitter", "http://brettwgreen.com", true, true);
-		ballista.createTwitterMentionButton("#ballista_anchor_twitter_mention", "brettwgreen", "Wazup my man", "twitter", true, true);
-		ballista.createFacebookShareButton("#ballista_anchor_fb_share", "http://www.google.com");
-	</pre>
-	<div id="ballista_anchor_twitter_share"></div>
-	<br clear="all" />
-	<div id="ballista_anchor_twitter_follow"></div>
-	<br clear="all" />
-	<div id="ballista_anchor_twitter_hashtag"></div>
-	<br clear="all" />
-	<div id="ballista_anchor_twitter_mention"></div>
-	<br clear="all" />
-	<div id="ballista_anchor_fb_share"></div>
-	<br clear="all" />
-
+	<br />
+	<div class="container" role="main">
+		<div class="jumbotron">
+			<h2>Ballista - A JavaScript library for creating social media buttons</h2>
+			<h2>Version 1.0</h2>
+		</div>
+		
+		<h3>Examples</h3>
+<pre class="prettyprint">ballista.createTwitterShareButton("#ballista_anchor_twitter_share", "Check out my sweet page", true, "brettwgreen", "brettwgreen", "awesome", true);
+ballista.createTwitterFollowButton("#ballista_anchor_twitter_follow", "brettwgreen", true, "brettwgreen", "brettwgreen", "awesome", true);
+ballista.createTwitterHashtagButton("#ballista_anchor_twitter_hashtag", "omg", "He's at it again", "brettwgreen,twitter", "http://brettwgreen.com", true, true);
+ballista.createTwitterMentionButton("#ballista_anchor_twitter_mention", "brettwgreen", "Wazup my man", "twitter", true, true);
+ballista.createFacebookShareButton("#ballista_anchor_fb_share", "http://www.google.com");</pre>
+		<div id="ballista_anchor_twitter_share"></div>
+		<br clear="all" />
+		<div id="ballista_anchor_twitter_follow"></div>
+		<br clear="all" />
+		<div id="ballista_anchor_twitter_hashtag"></div>
+		<br clear="all" />
+		<div id="ballista_anchor_twitter_mention"></div>
+		<br clear="all" />
+		<div id="ballista_anchor_fb_share"></div>
+		<br clear="all" />
+	</div>
 	</body>
 </html>
 
