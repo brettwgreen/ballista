@@ -3,8 +3,8 @@ var ballista = (function ($) {
     window.loadedTwitterScript = false;
     
 	self.log = function(msg) {
-		if (console.log) {
-			console.log(msg);
+		if (window.console && window.console.log) {
+			window.console.log(msg);
 		}
 	};
 	
