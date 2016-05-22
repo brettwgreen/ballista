@@ -5,6 +5,7 @@
    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<title>Ballista examples</title>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>	
 	<script lang="javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
 	<script lang="javascript" src="src/ballista.js"></script>
 	<script lang="javascript" src="src/ballista_facebook.js"></script>
@@ -26,7 +27,13 @@
 	<h1>Ballista - Javascript library for creating social media buttons</h1>
 	<h1>Version 1.0</h1>
 	<h2>Examples</h2>
-	This is the coolest blog post ever
+	<code class="prettyprint">
+		ballista.createTwitterShareButton("#ballista_anchor_twitter_share", "Check out my sweet page", true, "brettwgreen", "brettwgreen", "awesome", true);
+		ballista.createTwitterFollowButton("#ballista_anchor_twitter_follow", "brettwgreen", true, "brettwgreen", "brettwgreen", "awesome", true);
+		ballista.createTwitterHashtagButton("#ballista_anchor_twitter_hashtag", "omg", "He's at it again", "brettwgreen,twitter", "http://brettwgreen.com", true, true);
+		ballista.createTwitterMentionButton("#ballista_anchor_twitter_mention", "brettwgreen", "Wazup my man", "twitter", true, true);
+		ballista.createFacebookShareButton("#ballista_anchor_fb_share", "http://www.google.com");
+	</code>
 	
 	<div id="ballista_anchor_twitter_share"></div>
 	<br clear="all" />
