@@ -1,1 +1,35 @@
-Examples for ballista
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ballista examples</title>
+	<script lang="javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+	<script lang="javascript" src="src/ballista.js"></script>
+	<script lang="javascript" src="src/ballista_facebook.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			ballista.createTwitterShareButton("#ballista_anchor_share", "Check out my sweet page", true, "brettwgreen", "brettwgreen", "awesome", true);
+			ballista.createTwitterFollowButton("#ballista_anchor_follow", "brettwgreen", true, "brettwgreen", "brettwgreen", "awesome", true);
+			ballista.createTwitterHashtagButton("#ballista_anchor_hashtag", "omg", "He's at it again", "brettwgreen,twitter", "http://brettwgreen.com", true, true);
+			ballista.createTwitterMentionButton("#ballista_anchor_mention", "brettwgreen", "Wazup my man", "twitter", true, true);
+			ballista.createFacebookShareButton("#ballista_anchor_fb", "http://www.google.com");
+		});
+	</script>
+</head>
+<body>
+	This is the coolest blog post ever
+	
+	<div id="ballista_anchor_twitter_share"></div>
+	<br clear="all" />
+	<div id="ballista_anchor_twitter_follow"></div>
+	<br clear="all" />
+	<div id="ballista_anchor_twitter_hashtag"></div>
+	<br clear="all" />
+	<div id="ballista_anchor_twitter_mention"></div>
+	<br clear="all" />
+	<div id="ballista_anchor_fb"></div>
+	<br clear="all" />
+
+	</body>
+</html>
+
