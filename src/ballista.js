@@ -2,6 +2,12 @@ var ballista = (function ($) {
     var self = this;
     window.loadedTwitterScript = false;
     
+	self.log = function(msg) {
+		if (console.log) {
+			console.log(msg);
+		}
+	};
+	
     self.loadScript = function(d, s, id, url) {
       var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
         if(!d.getElementById(id)){
@@ -90,7 +96,8 @@ var ballista = (function ($) {
       createTwitterFollowButton: self.createTwitterFollowButton,
       createTwitterHashtagButton: self.createTwitterHashtagButton,
       createTwitterMentionButton: self.createTwitterMentionButton,
-      loadScript: self.loadScript
+      loadScript: self.loadScript,
+	  log: self.log
     };
     
 }($));
