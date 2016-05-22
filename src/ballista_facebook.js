@@ -1,7 +1,10 @@
 var ballista_facebook = (function ($, ballista) {
     
     ballista.loadFacebookScript = function() {
-      ballista.loadScript(document, 'script', 'facebook-jssdk', 'connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=163974430303334');
+      if (/^file:/.test(document.location)) {
+		  ballista.log('Facebook share button will not work properly on FILE protocol!');
+	  }
+	  ballista.loadScript(document, 'script', 'facebook-jssdk', 'connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=163974430303334');
     };
     
     ballista.createFacebookButton = function(el, buttonType, options) {
