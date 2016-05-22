@@ -9,6 +9,6 @@ ballista.createTwitterFollowButton("#ballista_anchor", "brettwgreen", true, "bre
 ballista.createTwitterHashtagButton("#ballista_anchor", "omg", "He's at it again", "brettwgreen,twitter", "http://brettwgreen.com", true, true);
 ballista.createTwitterMentionButton("#ballista_anchor", "brettwgreen", "Wazup my man", "twitter", true, true);
 ballista.createFacebookShareButton("#ballista_anchor_fb", "http://www.google.com");
-``'
+```
 
 
