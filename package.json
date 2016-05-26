@@ -1,0 +1,34 @@
+{
+  "name": "ballista",
+  "version": "0.1.0",
+  "description": "Javascript library for adding social media buttons to a web page",
+  "main": "src/ballista.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettwgreen/ballista.git"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "share",
+    "buttons"
+  ],
+  "author": "Brett W Green",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brettwgreen/ballista/issues"
+  },
+  "homepage": "https://github.com/brettwgreen/ballista#readme"
+}
